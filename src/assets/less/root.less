@@ -95,17 +95,16 @@
     .cs-hide-on-mobile {
         display: none;
     }
-
     .sr-only {
-        clip-path: inset(50%) !important;
-        white-space: nowrap !important;
-        border-width: 0 !important;
-        width: 1px !important;
-        height: 1px !important;
-        margin: -1px !important;
-        padding: 0 !important;
-        position: absolute !important;
-        overflow: hidden !important;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
     }
 }
 /* Desktop - 1024px */
