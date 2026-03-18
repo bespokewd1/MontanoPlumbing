@@ -1333,61 +1333,77 @@
   /* Base styles applied first (equivalent to min-width: 0rem) */
   background: #1c1c1c;
   padding: 5.25rem 0 calc(20 / 16 * 1rem);
-  font-size: min(1vw, 0.5rem);
   /* Small Desktop */
 }
 #footer .left-section {
   margin: auto;
   margin-bottom: 2.125rem;
+  width: 100%;
   text-align: center;
   display: grid;
   grid-template-areas: "logo cta" "text text";
-  grid-template-columns: 1fr 1fr;
-  column-gap: 0.3rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 0.75rem;
+  row-gap: 1rem;
+  align-items: start;
+  justify-items: center;
+}
+#footer .left-section > * {
+  min-width: 0;
 }
 #footer .left-section .logo {
-  display: inline-block;
-  margin: auto;
-  margin-bottom: 1.875em;
-  height: 2em;
-  width: auto;
-  text-align: center;
   grid-area: logo;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 16rem;
+  height: auto;
+  text-align: center;
 }
 #footer .left-section .logo img {
   display: block;
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 #footer .left-section .text {
+  grid-area: text;
   opacity: 0.9;
-  margin: auto;
-  width: 100%;
+  margin: 0;
+  max-width: 100%;
   font-size: 1rem;
   line-height: 1.92857143rem;
   color: #fff;
   text-align: center;
-  grid-area: text;
+  width: auto;
 }
 #footer .left-section .cta {
   grid-area: cta;
-  aspect-ratio: 16/9;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 1.875rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.3rem;
+  aspect-ratio: auto;
 }
 #footer .left-section .cta p {
+  margin: 0;
   font-size: 0.75rem;
   color: #fff;
+  text-align: center;
+}
+#footer .left-section .cta a {
+  display: block;
+  width: 100%;
+  max-width: 155px;
 }
 #footer .left-section .cta img {
   display: block;
   width: 100%;
   height: auto;
-  max-width: 155px;
+  max-width: none;
   transition: transform 200ms;
 }
 #footer .left-section .cta:hover img {

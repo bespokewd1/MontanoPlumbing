@@ -12,8 +12,26 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link
+    rel="preload"
+    href="/assets/css/critical.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+    </noscript>
+
+    <link
+    rel="preload"
+    href="/assets/css/local.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    </noscript>
+
     <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
     <meta property="og:image" content="{{ site.url }}/assets/images/ogmontano.jpg"/>
     <meta property="og:image:secure_url" content="{{ site.url }}/assets/images/ogmontano.jpg"/>

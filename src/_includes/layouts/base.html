@@ -51,14 +51,13 @@
       as="font"
       type="font/woff2"
       href="/assets/fonts/roboto-v29-latin-regular.woff2"
-      crossorigin
+      fetchpriority="high" 
     />
     <link
       rel="preload"
       as="font"
       type="font/woff2"
       href="/assets/fonts/roboto-v29-latin-700.woff2"
-      crossorigin
     />
 
     <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
@@ -66,7 +65,16 @@
     <link rel="preload" as="image" href="{{ preloadImg }}" />
     {% endif %}
 
-    <link rel="stylesheet" href="/assets/css/root.css" />
+    <link
+      rel="preload"
+      href="/assets/css/root.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/assets/css/root.css" />
+    </noscript>
+    <!-- <link rel="stylesheet" href="/assets/css/root.css" /> -->
     <!-- <link rel="stylesheet" href="/assets/css/dark.css" /> -->
 
     <!-- <script defer src="/assets/js/dark.js"></script> -->
