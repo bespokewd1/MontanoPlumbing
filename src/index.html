@@ -12,15 +12,10 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link
-    rel="preload"
-    href="/assets/css/critical.css"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-    <link rel="stylesheet" href="/assets/css/critical.css" />
-    </noscript>
+
+    <link rel="stylesheet" href="/assets/css/local-critical.css" />
+
+    <!-- <link rel="stylesheet" href="/assets/css/critical.css" /> -->
 
     <link
     rel="preload"
