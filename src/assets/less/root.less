@@ -3,6 +3,7 @@
 <---        Core Styles         -->
 <--- -------------------------- -*/
 /* CodeStitch Root and Helpers */
+
 @media only screen and (min-width: 0rem) {
     :root {
         --primary: #3952a2;
@@ -94,18 +95,18 @@
     .cs-hide-on-mobile {
         display: none;
     }
-    .sr-only {
-        clip-path: inset(50%);
-        white-space: nowrap;
-        border-width: 0;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        position: absolute;
-        overflow: hidden;
-    }
 
+    .sr-only {
+        clip-path: inset(50%) !important;
+        white-space: nowrap !important;
+        border-width: 0 !important;
+        width: 1px !important;
+        height: 1px !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        position: absolute !important;
+        overflow: hidden !important;
+    }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
