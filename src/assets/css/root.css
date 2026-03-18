@@ -93,6 +93,17 @@
   .cs-hide-on-mobile {
     display: none;
   }
+  .sr-only {
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {

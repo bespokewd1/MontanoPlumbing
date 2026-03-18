@@ -1,7 +1,7 @@
 module.exports = {
     "name": "Montano Plumbing & Contracting LTD.",
     "email": "info@montanoplumbing.ca",
-    "phoneForTel": "",
+    "phoneForTel": "780-708-5345",
     "phoneFormatted": "780-708-5345",
     "address": {
         "lineOne": "",
@@ -16,5 +16,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://montanoplumbing.ca/"
 };

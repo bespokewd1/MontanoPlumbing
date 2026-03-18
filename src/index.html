@@ -14,17 +14,35 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ site.url }}/assets/images/ogmontano.jpg"/>
-        <meta property="og:image:secure_url" content="{{ site.url }}/assets/images/ogmontano.jpg"/>
+    <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
+    <meta property="og:image" content="{{ site.url }}/assets/images/ogmontano.jpg"/>
+    <meta property="og:image:secure_url" content="{{ site.url }}/assets/images/ogmontano.jpg"/>
 
+    <link
+    rel="preload"
+    as="image"
+    href="/assets/images/m1.webp"
+    media="(max-width: 600px)"
+    fetchpriority="high"
+    />
+    <link
+    rel="preload"
+    as="image"
+    href="/assets/images/1.webp"
+    media="(min-width: 601px)"
+    fetchpriority="high"
+    />
 
-    <link rel="preload" as="image" href="/assets/images/m1.avif" media="(max-width: 600px)">
+    <link rel="preload"  fetchpriority="low" as="image" href="/assets/images/m2.webp" media="(max-width: 600px)">
+    <link rel="preload" fetchpriority="low" as="image" href="/assets/images/2.webp" media="(min-width: 601px)">
+    <link rel="preload" fetchpriority="low" as="image" href="/assets/images/m3.webp" media="(max-width: 600px)">
+    <link rel="preload" fetchpriority="low" as="image" href="/assets/images/3.webp" media="(min-width: 601px)"> 
+    <!-- <link rel="preload" as="image" href="/assets/images/m1.avif" media="(max-width: 600px)">
     <link rel="preload" as="image" href="/assets/images/1.avif" media="(min-width: 601px)">
     <link rel="preload" as="image" href="/assets/images/m2.avif" media="(max-width: 600px)">
     <link rel="preload" as="image" href="/assets/images/2.avif" media="(min-width: 601px)">
     <link rel="preload" as="image" href="/assets/images/m3.avif" media="(max-width: 600px)">
-    <link rel="preload" as="image" href="/assets/images/3.avif" media="(min-width: 601px)">
+    <link rel="preload" as="image" href="/assets/images/3.avif" media="(min-width: 601px)"> -->
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -91,6 +109,9 @@ eleventyNavigation:
 <div class="carousel">
     <div class="carousel-inner">
 
+        <h1 class="sr-only">
+            PLUMBING, HEATING, GASFITTING & RENOVATION. FOR EDMONTON AND SURROUNDING AREAS
+        </h1>
 
         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
         <div class="carousel-item">
@@ -642,14 +663,14 @@ Our team is committed to delivering high-quality craftsmanship that brings comfo
 <section id="content-page-851">
     <div class="cs-container">
         <div class="cs-content"><br><br><br>
-            <h1 class="cs-title"> <span class="cs-color">Montano Plumbing & Contracting LTD.</span></h1><br>
+            <h2 class="cs-title"> <span class="cs-color">Montano Plumbing & Contracting LTD.</span></h2><br>
 
-            <h4>MPC delivers exceptional renovation and plumbing services for residential and commercial clients. We pride ourselves on exceeding expectations with our reliable, professional approach, ensuring every project is completed to the highest standards.
+            <h3>MPC delivers exceptional renovation and plumbing services for residential and commercial clients. We pride ourselves on exceeding expectations with our reliable, professional approach, ensuring every project is completed to the highest standards.
 <br><br>
                 Trust MPC for quality service and lasting peace of mind.
                 <br><br>
 
-                Licensed and Insured</h4>
+                Licensed and Insured</h3>
 
 
 
